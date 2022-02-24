@@ -12,7 +12,7 @@ const Header = (props) => {
     <StyledHeader>
       <h1>devfinder</h1>
       <article onClick={props.click}>
-        {theme.title === "light" ? "DARK" : "LIGHT"}{" "}
+        {theme.title === "light" ? "DARK" : "LIGHT"}
         <img src={icon} alt="Sun" />
       </article>
     </StyledHeader>
