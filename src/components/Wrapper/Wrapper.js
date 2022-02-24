@@ -10,6 +10,10 @@ const Wrapper = styled.section`
   @media (max-width: 1200px) {
     width: 570px;
   }
+
+  @media (max-width: 768px) {
+    width: 320px;
+  }
 `;
 
 export default Wrapper;

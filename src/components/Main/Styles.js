@@ -11,6 +11,10 @@ const StyledMain = styled.main`
   display: flex;
   gap: 32px;
 
+  @media (max-width: 768px) {
+    padding: 24px 12px;
+  }
+
   .profile-wrapper {
     display: flex;
     flex-direction: column;
@@ -26,6 +30,10 @@ const StyledMain = styled.main`
       justify-content: space-between;
       gap: 30px;
 
+      @media (max-width: 768px) {
+        gap: 12px;
+      }
+
       .profile-pic {
         width: 100px;
         height: 100px;
@@ -40,7 +48,7 @@ const StyledMain = styled.main`
 
         @media (max-width: 1200px) {
           flex-direction: column;
-          justify-content: start;
+          justify-content: space-around;
           gap: 12px;
           margin: 0 auto;
         }
@@ -79,8 +87,15 @@ const StyledMain = styled.main`
       .profile-stats {
         background: ${({ theme }) => theme.colors.backgroundColor};
         border-radius: 8px;
-        padding: 24px;
-        padding-right: 80px;
+        padding: 32px;
+
+        @media (max-width: 768px) {
+          font-size: 0.8rem;
+
+          ul {
+            width: 100%;
+          }
+        }
 
         & > ul {
           display: flex;
@@ -101,7 +116,11 @@ const StyledMain = styled.main`
       .profile-footer {
         display: flex;
         justify-content: space-between;
-        /* gap: 100px; */
+
+        @media (max-width: 768px) {
+          flex-direction: column;
+          gap: 12px;
+        }
 
         .p-2 {
           padding-left: 4px;
